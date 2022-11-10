@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+p{
+    color: #ccc;
+    text-align: center;
+    font-weight: 100;
+    font-size: x-large;
+}
+.who{
+    text-align: center;
+    font-size: xx-large;
+}
+.who h1{
+    text-align: center;
+    color: coral;
+}
+/* teks berjalan */
+.wrapper{
+    display: flex;
+}
+.wrapper .runningtext{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.runningtext li{
+    list-style: none;
+    color: coral;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+.runningtext li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.runningtext li span::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    border-left: 2px solid coral;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+/* foto profile */
+.pp{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pp img{
+    width: 400px;
+    height: 350px;
+    border-radius: 100%;
+    border: 3px solid #ccc;
+}
+
+/* cards */
+.cards{
+    text-align: center;
+    margin-top: 70px;
+}
+.card1{
+    width: 200px;
+    height: 210px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.card2{
+    width: 200px;
+    height: 210px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-bottom: 0;
+}
+.card3{
+    width: 200px;
+    height: 210px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.fa-solid{
+    margin-top: 30px;
+    font-size: 60px;
+    color: coral;
+}
+.fa-regular{
+    margin-top: 30px;
+    font-size: 60px;
+    color: coral;
+}
+.more a{
+    font-size: small;
+    color: #333;
+}
+/* nama dalam card */
+h1{
+    color: #333;
+    font-family: sans-serif;
+
+}
